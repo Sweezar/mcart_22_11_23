@@ -1,8 +1,8 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Вакансии ", 
-		"/o-servise/vakansii-/", 
+		"Вакансии", 
+		"/o-servise/vakansii/", 
 		Array(), 
 		Array(), 
 		"" 

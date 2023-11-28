@@ -1,7 +1,7 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		" Избранное", 
+		"Избранное", 
 		"/lichnyy-kabinet-pokupatelya/izbrannoe/", 
 		Array(), 
 		Array(), 
