@@ -72,15 +72,17 @@
               <a href="#" class="mr-3"><span class="text-black fl-bigmug-line-phone351"></span> <span
                   class="d-none d-md-inline-block ml-2">
                   <?$APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "",
-                    Array(
-                      "AREA_FILE_SHOW" => "file",
-                      "AREA_FILE_SUFFIX" => "inc",
-                      "EDIT_TEMPLATE" => "",
-                      "PATH" => "include/header_phone.php"
-                    )
-                  );?>
+	"bitrix:main.include", 
+	".default", 
+	array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "include/header_phone.php",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
+);?>
                 </span></a>
               <a href="#"><span class="text-black fl-bigmug-line-email64"></span> <span
                   class="d-none d-md-inline-block ml-2">
@@ -131,36 +133,6 @@
             </h1>
           </div>
           <div class="col-4 col-md-4 col-lg-8">
-            <!-- <nav class="site-navigation text-right text-md-right" role="navigation">
-
-              <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"
-                  class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
-
-              <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="active">
-                  <a href="index.html">Home</a>
-                </li>
-                <li class="has-children">
-                  <a href="properties.html">Properties</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Buy</a></li>
-                    <li><a href="#">Rent</a></li>
-                    <li><a href="#">Lease</a></li>
-                    <li class="has-children">
-                      <a href="#">Menu</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Menu One</a></li>
-                        <li><a href="#">Menu Two</a></li>
-                        <li><a href="#">Menu Three</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav> -->
 
             <?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
@@ -189,3 +161,11 @@
       </div>
     </div>
   </div>
+
+  <?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumbs", Array(
+	"PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
+		"SITE_ID" => "s1",	// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
+		"START_FROM" => "0",	// Номер пункта, начиная с которого будет построена навигационная цепочка
+	),
+	false
+);?>

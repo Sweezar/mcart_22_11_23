@@ -1,7 +1,11 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мебельная компания");
-?><?php
+?>
+<?
+$APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
+?>
+<?php
 GLOBAL $arrFilterPreferredDeal;
 $selectId = 5;
 $arrFilterPreferredDeal = array("PROPERTY_PREFERRED_DEAL"=>$selectId);
@@ -37,7 +41,7 @@ $arrFilterPreferredDeal = array("PROPERTY_PREFERRED_DEAL"=>$selectId);
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "5",
 		"IBLOCK_TYPE" => "ads",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"MESSAGE_404" => "",
 		"NEWS_COUNT" => "20",
