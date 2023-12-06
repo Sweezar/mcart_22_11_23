@@ -131,7 +131,7 @@
             </h1>
           </div>
           <div class="col-4 col-md-4 col-lg-8">
-            <nav class="site-navigation text-right text-md-right" role="navigation">
+            <!-- <nav class="site-navigation text-right text-md-right" role="navigation">
 
               <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"
                   class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
@@ -160,16 +160,16 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
-            </nav>
+            </nav> -->
 
             <?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
-	".default", 
+	"top_menu", 
 	array(
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "left",
 		"DELAY" => "N",
-		"MAX_LEVEL" => "1",
+		"MAX_LEVEL" => "4",
 		"MENU_CACHE_GET_VARS" => array(
 		),
 		"MENU_CACHE_TIME" => "360000",
@@ -177,7 +177,7 @@
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"ROOT_MENU_TYPE" => "top",
 		"USE_EXT" => "N",
-		"COMPONENT_TEMPLATE" => ".default"
+		"COMPONENT_TEMPLATE" => "top_menu"
 	),
 	false
 );?>
