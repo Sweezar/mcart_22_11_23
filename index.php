@@ -26,7 +26,7 @@ $arrFilterPreferredDeal = array("PROPERTY_PREFERRED_DEAL"=>$selectId);
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
 		"COMPONENT_TEMPLATE" => "slider",
-		"DETAIL_URL" => "#SITE_DIR#/#IBLOCK_CODE#/#CODE#",
+		"DETAIL_URL" => "#SITE_DIR#/#IBLOCK_CODE#/#CODE#/",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",
@@ -130,7 +130,7 @@ $arrFilterPreferredDeal = array("PROPERTY_PREFERRED_DEAL"=>$selectId);
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "300",
 		"CACHE_TYPE" => "A",
-		"DETAIL_URL" => "#SITE_DIR#/obyavleniya/#CODE#",
+		"DETAIL_URL" => "#SITE_DIR#/obyavleniya/#CODE#/",
 		"FIELD_CODE" => array(
 			0 => "PREVIEW_PICTURE",
 			1 => "PROPERTY_PRICE",
