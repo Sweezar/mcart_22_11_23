@@ -38,6 +38,18 @@ class Version20231212142130 extends Version
      */
     public function down()
     {
+        $this->getExchangeManager()
+            ->HlblockElementsImport()
+            ->setExchangeResource('hlblock_elements.xml')
+            ->setLimit(20)
+            ->execute(function ($item) {
+                $this->getHelperManager()
+                    ->Hlblock()
+                    ->deleteElement(
+                        $item['hlblock_id'],
+                        $item['fields']['ID']
+                    );
+        });
     }
 
 
