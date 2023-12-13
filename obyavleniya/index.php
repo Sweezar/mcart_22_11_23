@@ -74,7 +74,7 @@ $APPLICATION->SetTitle("Объявления");
 		"PAGER_SHOW_ALL" => "N",
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_TEMPLATE" => "template.php",
-		"PAGER_TITLE" => "Новости",
+		"PAGER_TITLE" => "Объявления",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"SEF_FOLDER" => "/obyavleniya/",
 		"SEF_MODE" => "Y",

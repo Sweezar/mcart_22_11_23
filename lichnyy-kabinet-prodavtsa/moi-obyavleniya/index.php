@@ -1,9 +1,17 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мои объявления");
-?><?$APPLICATION->IncludeComponent(
+?>
+<?php
+GLOBAL $arrFilterMyAds;
+$userId = $GLOBALS['USER']->GetID();
+$arrFilterMyAds = array('CREATED_BY'=>$userId);
+?>
+
+
+<?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
-	".default", 
+	"ads_complex", 
 	array(
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -16,7 +24,7 @@ $APPLICATION->SetTitle("Мои объявления");
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
+		"CACHE_TYPE" => "N",
 		"CHECK_DATES" => "Y",
 		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
@@ -27,10 +35,17 @@ $APPLICATION->SetTitle("Мои объявления");
 		),
 		"DETAIL_PAGER_SHOW_ALL" => "Y",
 		"DETAIL_PAGER_TEMPLATE" => "",
-		"DETAIL_PAGER_TITLE" => "Страница",
+		"DETAIL_PAGER_TITLE" => "Мои объявления",
 		"DETAIL_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "BATHROOMS",
+			1 => "FLOORS",
+			2 => "GARAGE",
+			3 => "AREA",
+			4 => "LINKS",
+			5 => "PRICE",
+			6 => "GALLERY",
+			7 => "MATERIALS",
+			8 => "",
 		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
@@ -40,14 +55,23 @@ $APPLICATION->SetTitle("Мои объявления");
 		"IBLOCK_ID" => "5",
 		"IBLOCK_TYPE" => "ads",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+		"FIELD_CODE" => array(
+			0 => "CREATED_BY",
+			1 => "",
+		),
+		"FILTER_NAME" => "arrFilterMyAds",
 		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"LIST_FIELD_CODE" => array(
-			0 => "",
+			0 => "CREATED_BY",
 			1 => "",
 		),
 		"LIST_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "BATHROOMS",
+			1 => "FLOORS",
+			2 => "GARAGE",
+			3 => "AREA",
+			4 => "PRICE",
+			5 => "",
 		),
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
@@ -59,13 +83,13 @@ $APPLICATION->SetTitle("Мои объявления");
 		"PAGER_SHOW_ALL" => "N",
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_TEMPLATE" => ".default",
-		"PAGER_TITLE" => "Новости",
+		"PAGER_TITLE" => "Мои объявления",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"SEF_FOLDER" => "/lichnyy-kabinet-prodavtsa/moi-obyavleniya/",
 		"SEF_MODE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
-		"SET_TITLE" => "Y",
+		"SET_TITLE" => "N",
 		"SHOW_404" => "N",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_BY2" => "SORT",
@@ -73,17 +97,25 @@ $APPLICATION->SetTitle("Мои объявления");
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N",
 		"USE_CATEGORIES" => "N",
-		"USE_FILTER" => "N",
+		"USE_FILTER" => "Y",
 		"USE_PERMISSIONS" => "N",
 		"USE_RATING" => "N",
 		"USE_REVIEW" => "N",
 		"USE_RSS" => "N",
 		"USE_SEARCH" => "N",
-		"COMPONENT_TEMPLATE" => ".default",
+		"COMPONENT_TEMPLATE" => "ads_complex",
 		"DISPLAY_DATE" => "Y",
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"USE_SHARE" => "N",
+		"FILTER_FIELD_CODE" => array(
+			0 => "CREATED_BY",
+			1 => "",
+		),
+		"FILTER_PROPERTY_CODE" => array(
+			0 => "PRICE",
+			1 => "",
+		),
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",
