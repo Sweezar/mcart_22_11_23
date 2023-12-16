@@ -29,18 +29,25 @@ $aMenuLinks = Array(
 		"CSite::InGroup(array(1,8))" 
 	),
 	Array(
-		"d", 
-		"", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Личный кабинет покупателя", 
 		"/lichnyy-kabinet-pokupatelya/", 
 		Array(), 
 		Array(), 
 		"CSite::InGroup(array(1,7))" 
-	)
+	),
+	Array(
+		"Войти", 
+		"/auth/", 
+		Array(), 
+		Array(), 
+		"!\$USER->IsAuthorized()" 
+	),
+	Array(
+		"Выйти", 
+		"/auth/logout.php", 
+		Array(), 
+		Array(), 
+		"\$USER->IsAuthorized()" 
+	),
 );
 ?>
