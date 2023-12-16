@@ -116,6 +116,7 @@ $arrFilterMyAds = array('CREATED_BY'=>$userId);
 			0 => "PRICE",
 			1 => "",
 		),
+		"ADS_COMPLEX_NEWS_LIST_TITLE" => "МОИ ОБЪЯВЛЕНИЯ",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",

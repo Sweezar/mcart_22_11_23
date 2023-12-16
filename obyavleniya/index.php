@@ -96,6 +96,7 @@ $APPLICATION->SetTitle("Объявления");
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
 		"COMPONENT_TEMPLATE" => "ads_complex",
+		"ADS_COMPLEX_NEWS_LIST_TITLE" => "Объявления",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",
