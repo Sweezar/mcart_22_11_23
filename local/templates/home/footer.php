@@ -12,7 +12,7 @@
               "AREA_FILE_SHOW" => "file",
               "AREA_FILE_SUFFIX" => "inc",
               "EDIT_TEMPLATE" => "",
-              "PATH" => "include/footer_about.php"
+              "PATH" => "/include/footer_about.php"
             )
           );?>
           </div>
@@ -60,7 +60,7 @@
               "AREA_FILE_SHOW" => "file",
               "AREA_FILE_SUFFIX" => "inc",
               "EDIT_TEMPLATE" => "",
-              "PATH" => "include/footer_social.php"
+              "PATH" => "/include/footer_social.php"
             )
           );?>
           
@@ -80,7 +80,7 @@
               "AREA_FILE_SHOW" => "file",
               "AREA_FILE_SUFFIX" => "inc",
               "EDIT_TEMPLATE" => "",
-              "PATH" => "include/footer_copyright.php"
+              "PATH" => "/include/footer_copyright.php"
             )
           );?>
           </p>

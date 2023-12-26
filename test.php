@@ -2,12 +2,16 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("test");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:system.auth.form",
-	"",
-	Array(
-		"FORGOT_PASSWORD_URL" => "/auth/",
-		"PROFILE_URL" => "/auth/profile.php",
-		"REGISTER_URL" => "/auth/registration.php",
-		"SHOW_ERRORS" => "N"
-	)
-);?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+	"mcart:agents.list", 
+	".default", 
+	array(
+		"AGENTS_COUNT" => "3",
+		"CACHE_TIME" => "300",
+		"CACHE_TYPE" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"HLBLOCK_TNAME" => "agents",
+		"USE_PAGE_NAVIGATION" => "Y",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

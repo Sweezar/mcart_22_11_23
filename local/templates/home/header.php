@@ -78,7 +78,7 @@
 		"AREA_FILE_SHOW" => "file",
 		"AREA_FILE_SUFFIX" => "inc",
 		"EDIT_TEMPLATE" => "",
-		"PATH" => "include/header_phone.php",
+		"PATH" => "/include/header_phone.php",
 		"COMPONENT_TEMPLATE" => ".default"
 	),
 	false
@@ -93,7 +93,7 @@
                       "AREA_FILE_SHOW" => "file",
                       "AREA_FILE_SUFFIX" => "inc",
                       "EDIT_TEMPLATE" => "",
-                      "PATH" => "include/header_mail.php"
+                      "PATH" => "/include/header_mail.php"
                     )
                   );?>
                 </span></a>
@@ -107,7 +107,7 @@
               "AREA_FILE_SHOW" => "file",
               "AREA_FILE_SUFFIX" => "inc",
               "EDIT_TEMPLATE" => "",
-              "PATH" => "include/header_social_list.php"
+              "PATH" => "/include/header_social_list.php"
             )
           );?>
           </div>
@@ -127,7 +127,7 @@
               "AREA_FILE_SHOW" => "file",
               "AREA_FILE_SUFFIX" => "inc",
               "EDIT_TEMPLATE" => "",
-              "PATH" => "include/header_logo.php"
+              "PATH" => "/include/header_logo.php"
             )
             );?>
             </h1>
