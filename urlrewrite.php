@@ -24,12 +24,36 @@ $arUrlRewrite=array (
     'PATH' => '/o-servise/novosti/index.php',
     'SORT' => 100,
   ),
+  23 => 
+  array (
+    'CONDITION' => '#^/exam/services/#',
+    'RULE' => '',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/exam/services/index.php',
+    'SORT' => 100,
+  ),
+  24 => 
+  array (
+    'CONDITION' => '#^/exam/products/#',
+    'RULE' => '',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/exam/products/index.php',
+    'SORT' => 100,
+  ),
   22 => 
   array (
     'CONDITION' => '#^/obyavleniya/#',
     'RULE' => '',
     'ID' => 'bitrix:news',
     'PATH' => '/obyavleniya/index.php',
+    'SORT' => 100,
+  ),
+  27 => 
+  array (
+    'CONDITION' => '#^/exam/news/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/exam/news/index.php',
     'SORT' => 100,
   ),
   0 => 
@@ -46,6 +70,14 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:catalog',
     'PATH' => '/products/index.php',
+    'SORT' => 100,
+  ),
+  28 => 
+  array (
+    'CONDITION' => '#^/exam/rew/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/exam/rew/index.php',
     'SORT' => 100,
   ),
   2 => 
