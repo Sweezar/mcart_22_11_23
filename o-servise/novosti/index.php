@@ -94,6 +94,10 @@ $APPLICATION->SetTitle("Новости");
 			5 => "",
 		),
 		"COMPONENT_TEMPLATE" => "mcart",
+		"ADS_COMPLEX_NEWS_LIST_TITLE" => "",
+		"TEMPLATE_THEME" => "blue",
+		"MEDIA_PROPERTY" => "",
+		"SLIDER_PROPERTY" => "",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",
