@@ -76,15 +76,15 @@
 	array(
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "left",
-		"DELAY" => "N",
+		"DELAY" => "Y",
 		"MAX_LEVEL" => "3",
 		"MENU_CACHE_GET_VARS" => array(
 		),
 		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "Y",
+		"MENU_CACHE_TYPE" => "A",
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "N",
+		"USE_EXT" => "Y",
 		"COMPONENT_TEMPLATE" => "top"
 	),
 	false
@@ -92,13 +92,17 @@
         <!-- /nav -->
         <?if($APPLICATION->GetCurPage() != '/exam/') :?>
         <!-- breadcrumbs -->
-        <div class="breadcrumbs-box">
-          <div class="inner-wrap">
-              <a href="">Главная</a>
-              <a href="">Мебель</a>
-              <span>Выставки и события</span>
-          </div>
-        </div>
+        <?$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb", 
+	"exam_breadcrumbs", 
+	array(
+		"COMPONENT_TEMPLATE" => "exam_breadcrumbs",
+		"START_FROM" => "0",
+		"PATH" => "",
+		"SITE_ID" => "s2"
+	),
+	false
+);?>
         <!-- /breadcrumbs -->
         <?endif ;?>
         <!-- page -->
