@@ -3,7 +3,7 @@ $aMenuLinks = Array(
 	Array(
 		"Главная", 
 		"/exam/", 
-		Array(), 
+		Array("/exam/index.php"), 
 		Array(), 
 		"" 
 	),
@@ -11,7 +11,7 @@ $aMenuLinks = Array(
 		"Компания", 
 		"company/", 
 		Array(), 
-		Array("DESCRIPTION"=>"текст для пункта Компания"), 
+		Array("DESCRIPTION"=>"текст для пункта Компания", "COLOR"=>"red"), 
 		"" 
 	),
 	Array(
@@ -52,6 +52,13 @@ $aMenuLinks = Array(
 	Array(
 		"Поиск", 
 		"/exam/search/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Опросы", 
+		"/exam/ask/", 
 		Array(), 
 		Array(), 
 		"" 

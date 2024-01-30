@@ -13,13 +13,6 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
-	),
-	Array(
-		"", 
-		"/exam/partneram/raspisanie-meropriyatiy/arkhiv.php", 
-		Array(), 
-		Array(), 
-		"" 
 	)
 );
 ?>

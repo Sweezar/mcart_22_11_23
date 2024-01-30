@@ -1,16 +1,22 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?
 $aMenuLinks = Array(
 	Array(
-		"Контакты", 
-		"contacts/", 
+		"Отзывы", 
+		"/exam/rew/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Авторизация", 
-		"login/", 
+		"Руководство", 
+		"/exam/company/management.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"История", 
+		"/exam/company/history.php", 
 		Array(), 
 		Array(), 
 		"" 
